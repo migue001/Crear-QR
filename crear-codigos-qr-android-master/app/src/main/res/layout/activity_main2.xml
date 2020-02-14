@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.parzibyte.crearcodigoqr.Main2Activity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linear1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/imagen_fondo"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/line1"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_above="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/logouaem" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:background="@drawable/imagen_fondo2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:layout_marginTop="-25dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Alumno:"
+                android:textColor="@color/verde"
+android:textStyle="bold"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JESUS MIGUEL RANGEL"
+                android:id="@+id/nombre"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero de Cuenta:"
+                android:textColor="@color/verde"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567"
+                android:id="@+id/num_cuenta"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/linear1"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licenciatura:"
+            android:textColor="@color/verde"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOFTWARE"
+                android:textColor="@color/verde"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/carrera"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Semestre"
+                android:textColor="@color/verde"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMERO"
+                android:textColor="@color/verde"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/semestre"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grupo:"
+                android:textColor="@color/verde"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SA"
+                android:textColor="@color/verde"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/grupo"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Editar_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/fondo_verde"
+        android:padding="7dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/aut" />
+
+
+    <!-- <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_below="@+id/linearLayout"
+         android:layout_marginTop="33dp"
+         app:srcCompat="@drawable/piedepagina" />-->
+</RelativeLayout>

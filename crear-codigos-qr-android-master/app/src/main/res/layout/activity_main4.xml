@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.parzibyte.crearcodigoqr.Main4Activity"
+    android:background="@color/white"
+    >
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="Editar Perfil"
+    android:background="@color/verde"
+    android:id="@+id/titulobarra"
+    >
+</android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/titulobarra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ua"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo_registro"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jesus Miguel Rangel Contreras"
+                android:textColor="@color/verde"
+                android:textSize="15dp"
+                android:id="@+id/consulnombre"
+
+                />
+
+            <EditText
+
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:hint="Semestre"
+                android:background="@drawable/fondo_campos_registro"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/consulsemestre"
+android:inputType="textCapCharacters"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/fondo_campos_registro"
+                android:hint="Grupo"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/consulgrupo"
+                android:inputType="textCapCharacters"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/fondo_campos_registro"
+                android:layout_marginTop="10dp"
+                android:hint="Licenciatura"
+                android:textColorHint="@color/white"
+                android:id="@+id/consullicenciatura"
+                android:inputType="textCapCharacters"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:background="@drawable/fondo_verde"
+                android:layout_marginTop="10dp"
+                android:id="@+id/guardarcambios"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
